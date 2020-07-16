@@ -1,8 +1,10 @@
+/* */
 /*
 Al presionar el  botón, 
 se debe mostrar un mensaje como el siguiente "Esto funciona de maravilla"*/
 function mostrar()
 {
-	alert("Dame las drogas, Lisa");
+	alert("Vas a morir, Moe");
 }
+
 
