@@ -10,17 +10,58 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 var numeroSecreto; 
 var contadorIntentos;
 
+
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
+	
+	contadorIntentos = 0;
+
+	numeroSecreto = Math.floor(Math.random() * 100) + 1; // Defino numero secreto entre 1 y 100
+
 	 
-		//alert(numeroSecreto );
+	alert("Ya puede ingresar el numero");
+	 
+			
+
+	
 	
 
 }
 
 function verificar()
 {
+	let ingresarNumero = parseInt(document.getElementById("txtIdNumero").value);
+	
+	contadorIntentos += 1;
+
+	document.getElementById("txtIdIntentos").value = contadorIntentos; // Display de intentos en el submitbox
+
+
+
+
+	if (ingresarNumero == numeroSecreto)
+	{
+		alert("Usted gano en " + contadorIntentos + " intentos!");
+
+	}
+	else if (ingresarNumero > numeroSecreto) 
+	{
+			alert("te pasaste");
+			contadorIntentos++;
+			
+
+	}
+	else 
+	{
+			alert("falta");
+			contadorIntentos++;
+			
+
+
+		
+	}
+	
+
 	
 	
 }

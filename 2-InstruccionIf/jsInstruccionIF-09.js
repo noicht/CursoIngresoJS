@@ -8,9 +8,9 @@ function mostrar()
 
 	let vMax = 10;
 	let vMin = 1;
-	let vNum = Math.round( Math.random *  (vMax - vMin) + vMin);
+	let vNum = Math.round( Math.random() *  (vMax - vMin) + vMin);
 
-	alert(vNum);
+	alert(parseFloat(vNum));
 
 
 }//FIN DE LA FUNCIÓN
